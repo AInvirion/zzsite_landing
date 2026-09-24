@@ -7,9 +7,9 @@
 <meta name="description" content="A dead-simple hosted website builder for small businesses. Bring your site or pick a template; the parts worth editing get a label and become a form. Invite-only while we build it.">
 <meta name="theme-color" content="#d3d8de">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 9h26l-3 14H1z' fill='%23C8102E'/%3E%3Cpath d='M8 13h14M8 18h9' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
-<link rel="preload" href="fonts/barlow-condensed-700.woff2?v=20260923" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-400.woff2?v=20260923" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20260923">
+<link rel="preload" href="fonts/barlow-condensed-700.woff2?v=20260924" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-400.woff2?v=20260924" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=20260924">
 </head>
 <body>
 
@@ -181,8 +181,41 @@
   </div>
 </section>
 
+<!-- ================= Made with AI ================= -->
+<section class="band band--paper" aria-labelledby="h-ai">
+  <div class="wrap ai">
+    <div class="ai__words">
+      <h2 id="h-ai" class="h2" data-i18n="aiH">Your AI made you a website. Here's where it lives.</h2>
+      <p class="p2" data-i18n="aiP">ChatGPT, or any other AI chat, will write you a whole page in a minute. Then it hands you a block of code and leaves you wondering where to put it. Put it here.</p>
+      <dl class="ai__qa">
+        <div><dt data-i18n="aiQ1">Where do I upload it?</dt><dd data-i18n="aiA1">Here. Paste the code, or upload the file or a zip.</dd></div>
+        <div><dt data-i18n="aiQ2">How do I change it later?</dt><dd data-i18n="aiA2">In a form. We label the parts worth editing; you never touch the code again.</dd></div>
+        <div><dt data-i18n="aiQ3">How does it get online?</dt><dd data-i18n="aiA3">Saving publishes it at a free zzsites.com address. Your own domain is a few exact steps away.</dd></div>
+      </dl>
+      <p class="ai__go"><a class="press press--red" href="#w-email" data-i18n="aiGo">Give it a home</a></p>
+    </div>
+
+    <figure class="code" aria-labelledby="code-cap">
+      <span class="tape tape--white tape--sm sheet-tag"><span class="tape__b"><span class="tape__i" data-i18n="codeTag">What your AI gave you</span></span></span>
+      <figcaption id="code-cap" class="visually-hidden" data-i18n="codeCap">A sample page of code from an AI chat, with labels stuck to the parts that become editable.</figcaption>
+      <p class="code__file"><span>index.html</span> <span data-i18n="codeNowhere">No home yet</span></p>
+      <ol class="code__lines" translate="no">
+        <li><code>&lt;!doctype html&gt;</code></li>
+        <li><code>&lt;title&gt;<span data-show="name">Peña Landscaping</span>&lt;/title&gt;</code></li>
+        <li class="code__lab"><code>&lt;h1&gt;<span data-show="name">Peña Landscaping</span>&lt;/h1&gt;</code><span class="tape tape--red tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tName">Business name</span></span></span></li>
+        <li class="code__lab"><code>&lt;p&gt;<span data-show="headline">Lawns, hedges and gardens, kept.</span>&lt;/p&gt;</code><span class="tape tape--red tape--sm tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="tHeadline">Headline</span></span></span></li>
+        <li class="code__lab"><code>&lt;a href="tel:2535550187"&gt;<span data-show="phone">(253) 555-0187</span>&lt;/a&gt;</code><span class="tape tape--black tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tPhoneOne">Phone</span></span></span></li>
+        <li><code>&lt;h2&gt;<span data-i18n="psFaqH">Questions</span>&lt;/h2&gt;</code></li>
+        <li class="code__lab"><code>&lt;ul&gt;&lt;li&gt;<span data-i18n="q1">Do you give free estimates?</span>&lt;/li&gt; …</code><span class="tape tape--blue tape--sm tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="tFaq">5 questions</span></span></span></li>
+        <li class="code__lab"><code>&lt;p&gt;<span data-show="hours">Mon to Sat, 7 am to 6 pm</span>&lt;/p&gt;</code><span class="tape tape--yellow tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tHours">Hours</span></span></span></li>
+        <li><code>&lt;footer&gt;© <span data-show="name">Peña Landscaping</span>&lt;/footer&gt;</code></li>
+      </ol>
+    </figure>
+  </div>
+</section>
+
 <!-- ================= The colours ================= -->
-<section class="band band--paper" aria-labelledby="h-colours">
+<section class="band" aria-labelledby="h-colours">
   <div class="wrap">
     <h2 id="h-colours" class="h2" data-i18n="coloursH">On your site, every colour of tape means something</h2>
     <p class="p2" data-i18n="coloursP">A label says what kind of thing sits under it, and what kind of thing it is decides what you can do with it. Nothing else on the page can be touched, so nothing else can break.</p>
@@ -197,7 +230,7 @@
 </section>
 
 <!-- ================= Four steps ================= -->
-<section class="band" aria-labelledby="h-steps">
+<section class="band band--paper" aria-labelledby="h-steps">
   <div class="wrap">
     <h2 id="h-steps" class="h2" data-i18n="stepsH">Four steps, start to live</h2>
     <p class="p2" data-i18n="stepsP">No repo, no build step, no hosting account, no CSS.</p>
@@ -211,7 +244,7 @@
 </section>
 
 <!-- ================= Six looks ================= -->
-<section class="band band--paper" aria-labelledby="h-looks">
+<section class="band" aria-labelledby="h-looks">
   <div class="wrap">
     <h2 id="h-looks" class="h2" data-i18n="looksH">Same labels, six looks</h2>
     <p class="p2" data-i18n="looksP">Pick a look and colour, type, spacing and corners change together. There is no colour picker, so no choice can make your site hard to read.</p>
@@ -227,7 +260,7 @@
 </section>
 
 <!-- ================= Left off ================= -->
-<section class="band" aria-labelledby="h-off">
+<section class="band band--paper" aria-labelledby="h-off">
   <div class="wrap off">
     <div>
       <h2 id="h-off" class="h2" data-i18n="offH">What we left off the shelf</h2>
@@ -245,7 +278,7 @@
 </section>
 
 <!-- ================= Price ================= -->
-<section class="band band--paper" aria-labelledby="h-price">
+<section class="band" aria-labelledby="h-price">
   <div class="wrap price">
     <div class="price__tag">
       <h2 id="h-price" class="visually-hidden" data-i18n="priceH">Price</h2>
@@ -264,7 +297,7 @@
 </section>
 
 <!-- ================= Close ================= -->
-<section class="band close" aria-labelledby="h-close">
+<section class="band band--paper close" aria-labelledby="h-close">
   <div class="wrap">
     <h2 id="h-close" class="close__h" data-i18n-lines="closeH"><span class="tape tape--red tape--xl"><span class="tape__b"><span class="tape__i">Two labels.</span></span></span> <span class="tape tape--black tape--xl tape--cut"><span class="tape__b"><span class="tape__i">Pick one.</span></span></span></h2>
     <p class="close__links">
@@ -284,6 +317,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=20260923" defer></script>
+<script src="app.js?v=20260924" defer></script>
 </body>
 </html>

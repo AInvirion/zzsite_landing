@@ -340,6 +340,9 @@ A small tape positioned absolutely off the top-left corner of the region it name
 - **Error:** border turns Label Red on `:user-invalid`.
 - **Field labels** in the form view are the same small tape that labelled the region.
 
+### Code sheet (made with AI)
+The "Your AI made you a website" band shows the code an AI chat hands a customer as a white sheet on the bench, tilted .6deg, tagged "What your AI gave you" with a white status tape, and headed by the file name and "No home yet" in ink-3. Lines are numbered and set in the platform monospace (`ui-monospace, "SF Mono", Menlo, Consolas, monospace`) at .8125rem, the one place monospace is allowed, because it is literal code. Region tapes follow the legend: red on the `<h1>` and headline, black on the phone link, blue on the list, yellow on the hours. On desktop they sit at the right end of their line; at 600px and below they drop under the line. The sheet shows the same sample data as the hero, so edits in the form view appear here too. Beside it, a ruled question and answer list (Barlow Condensed caps question, Barlow answer) and one red press.
+
 ### Navigation
 The header is the brand (a red cut tape reading "ZapZap" followed by "SITES" in condensed ink caps), a short note in ink-2, and the EN / ES toggles. The footer is Contact Black with the small brand tape and plain links.
 

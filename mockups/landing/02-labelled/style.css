@@ -1,12 +1,12 @@
 /* ZapZapSites landing, mockup 02: Labelled. */
 
-@font-face { font-family: "Barlow"; src: url("fonts/barlow-400.woff2?v=20260923") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Barlow"; src: url("fonts/barlow-500.woff2?v=20260923") format("woff2"); font-weight: 500; font-display: swap; }
-@font-face { font-family: "Barlow"; src: url("fonts/barlow-600.woff2?v=20260923") format("woff2"); font-weight: 600; font-display: swap; }
-@font-face { font-family: "Barlow"; src: url("fonts/barlow-700.woff2?v=20260923") format("woff2"); font-weight: 700; font-display: swap; }
-@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-600.woff2?v=20260923") format("woff2"); font-weight: 600; font-display: swap; }
-@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-700.woff2?v=20260923") format("woff2"); font-weight: 700; font-display: swap; }
-@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-800.woff2?v=20260923") format("woff2"); font-weight: 800; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-400.woff2?v=20260924") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-500.woff2?v=20260924") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-600.woff2?v=20260924") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-700.woff2?v=20260924") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-600.woff2?v=20260924") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-700.woff2?v=20260924") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlow-condensed-800.woff2?v=20260924") format("woff2"); font-weight: 800; font-display: swap; }
 
 :root {
   /* the bench and the paper */
@@ -76,7 +76,7 @@ input, button { font: inherit; color: inherit; }
   display: block;
   padding: .42em .75em .36em;
   background-color: var(--t);
-  background-image: url("img/tape.png?v=20260923");
+  background-image: url("img/tape.png?v=20260924");
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-blend-mode: soft-light;
@@ -118,7 +118,7 @@ input, button { font: inherit; color: inherit; }
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .22), 0 6px 12px -6px rgba(0, 0, 0, .45);
   transition: transform .15s var(--ease), box-shadow .15s var(--ease), background-color .15s var(--ease), color .15s var(--ease);
 }
-.press { background-image: url("img/tape.png?v=20260923"); background-size: auto 100%; background-blend-mode: soft-light; }
+.press { background-image: url("img/tape.png?v=20260924"); background-size: auto 100%; background-blend-mode: soft-light; }
 .press--red { background-color: var(--t-red); }
 .press--black { background-color: var(--t-black); }
 .press:hover { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .22), 0 10px 16px -8px rgba(0, 0, 0, .5); }
@@ -257,6 +257,30 @@ input, button { font: inherit; color: inherit; }
 }
 .p2 { margin-top: 1rem; max-width: 60ch; color: var(--ink-2); font-size: clamp(1.0625rem, 1rem + .2vw, 1.1875rem); }
 
+/* made with AI: the code a chat hands you, labelled like any other page */
+.ai { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(2rem, 4vw, 4rem); align-items: center; }
+.ai__qa { margin-top: clamp(1.5rem, 3vw, 2.25rem); border-top: 2px solid var(--ink); max-width: 38rem; }
+.ai__qa div { display: grid; grid-template-columns: 13rem 1fr; gap: .35rem 1.5rem; padding: .9rem 0; border-bottom: 1px solid var(--rule); }
+.ai__qa dt { font-family: var(--tape-font); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 1.125rem; line-height: 1.2; }
+.ai__qa dd { color: var(--ink-2); }
+.ai__go { margin-top: 1.75rem; }
+
+.code {
+  position: relative; margin: 0;
+  background: var(--paper); border-radius: 2px; box-shadow: var(--lift);
+  padding: 1.6rem 1.25rem 1.3rem; transform: rotate(.6deg);
+}
+.code__file { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .7rem; margin-bottom: .5rem; border-bottom: 1px solid var(--rule); font-size: .875rem; color: var(--ink-3); }
+.code__file span:first-child { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: var(--ink); }
+.code__lines { counter-reset: ln; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .8125rem; line-height: 1.5; color: var(--ink-2); }
+.code__lines li { counter-increment: ln; display: flex; align-items: center; gap: .4rem .75rem; min-height: 2.1rem; padding: .15rem 0; }
+.code__lines li::before { content: counter(ln); flex: none; width: 1.4rem; text-align: right; color: #8a8c90; }
+.code__lines code { font: inherit; flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.code__lab code { color: var(--ink); }
+.code__lab .tape { margin-left: auto; flex: none; }
+.code__lab:nth-child(odd) .tape { transform: rotate(-1.6deg); }
+.code__lab:nth-child(even) .tape { transform: rotate(1.3deg); }
+
 .kinds { margin-top: clamp(2rem, 4vw, 3rem); border-top: 2px solid var(--ink); }
 .kind { display: grid; grid-template-columns: 11rem 1fr; gap: 1.5rem; align-items: center; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
 .kind .tape { font-size: 1.25rem; justify-self: start; }
@@ -342,7 +366,13 @@ input, button { font: inherit; color: inherit; }
   .top__in { justify-content: space-between; }
   .act { grid-template-columns: 1fr 1fr; }
   .looks { grid-template-columns: 1fr 1fr; }
-  .off, .price { grid-template-columns: 1fr; }
+  .off, .price, .ai { grid-template-columns: 1fr; }
+  .code { transform: none; }
+  .ai { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .ai__words { display: contents; }
+  .ai > .code, .ai .ai__qa, .ai .ai__go { order: 2; }
+  .ai > .code { order: 1; margin-top: 2.25rem; }
+  .ai .h2, .ai .p2 { order: 0; }
   .price__fine { grid-column: 1; }
   .bench { margin-top: 1rem; }
 }
@@ -354,6 +384,11 @@ input, button { font: inherit; color: inherit; }
   .act { grid-template-columns: 1fr; }
   .tape--xl { font-size: clamp(1.9rem, 9.2vw, 2.6rem); }
   .kind { grid-template-columns: 1fr; gap: .6rem; }
+  .ai__qa div { grid-template-columns: 1fr; }
+  .code { padding: 1.5rem .9rem 1.1rem; }
+  .code__lab { flex-wrap: wrap; }
+  .code__lab code { flex: 1 1 calc(100% - 2.15rem); }
+  .code__lab .tape { margin: -.1rem 0 .3rem 2.15rem; }
   .steps, .looks { grid-template-columns: 1fr; }
   .lab__t { left: -.3rem; }
   .lab__t--r { left: auto; right: -.4rem; top: auto; bottom: -1.2rem; transform: rotate(2deg); }

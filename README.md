@@ -10,10 +10,9 @@ Design work for ZapZapSites, kept outside the product repo. The product source l
 | `DESIGN.md` | The adopted visual system, "Labelled" (embossed label-maker tape), recorded from the shipped mockup. Governs brand and marketing surfaces only. |
 | `.impeccable/design.json` | Machine-readable sidecar of `DESIGN.md` (tokens, scope, retired identity). |
 | `UI-PROPOSAL.md` | Instructions for producing the next UI proposal: surfaces, process, binding constraints, deliverable format, acceptance checklist, open decisions. |
-| `mockups/landing/01-order-pad/` | Landing proposal not chosen. |
-| `mockups/landing/02-labelled/` | Landing proposal **adopted** (a re-roll). Static HTML, CSS, JS, self-hosted fonts in `fonts/`, tape texture in `img/`, `?v=` cache-busting, no-JS fallbacks, EN/ES. |
+| `mockups/landing/02-labelled/` | Landing, **adopted**. Static HTML, CSS, JS, self-hosted fonts in `fonts/`, tape texture in `img/`, `?v=` cache-busting, no-JS fallbacks, EN/ES. |
 | `.impeccable/surfaces/*.md` | One direction contract per mockup (THESIS, OWN-WORLD, STORY, FIRST VIEWPORT, FORM, FINISH). |
-| `.impeccable/review/` | Screenshots. Top level is mockup 01; `02/` is mockup 02. |
+| `.impeccable/review/` | Screenshots of mockup 02, in `02/`. |
 | `.impeccable/questions/` | Decision-page state. Ignorable. |
 
 ## Adopted direction
