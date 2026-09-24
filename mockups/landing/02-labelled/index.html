@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZapZapSites · A website for your business</title>
+<meta name="description" content="A dead-simple hosted website builder for small businesses. Bring your site or pick a template; the parts worth editing get a label and become a form. Invite-only while we build it.">
+<meta name="theme-color" content="#d3d8de">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 9h26l-3 14H1z' fill='%23C8102E'/%3E%3Cpath d='M8 13h14M8 18h9' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/barlow-condensed-700.woff2?v=20260923" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-400.woff2?v=20260923" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=20260923">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="emboss" x="-10%" y="-30%" width="120%" height="160%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="soft"/>
+    <feSpecularLighting in="soft" surfaceScale="4" specularConstant="1.1" specularExponent="16" lighting-color="#ffffff" result="spec">
+      <feDistantLight azimuth="250" elevation="38"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="SourceAlpha" operator="in" result="lit"/>
+    <feOffset in="SourceAlpha" dy="-1.6" result="up"/>
+    <feComposite in="SourceAlpha" in2="up" operator="out" result="lowEdge"/>
+    <feGaussianBlur in="lowEdge" stdDeviation="0.45" result="lowSoft"/>
+    <feFlood flood-color="#000000" flood-opacity="0.38"/>
+    <feComposite in2="lowSoft" operator="in" result="shade"/>
+    <feOffset in="SourceAlpha" dy="1.3" result="down"/>
+    <feComposite in="SourceAlpha" in2="down" operator="out" result="topEdge"/>
+    <feFlood flood-color="#ffffff" flood-opacity="0.75"/>
+    <feComposite in2="topEdge" operator="in" result="rim"/>
+    <feOffset in="SourceAlpha" dy="1.4" result="drop"/>
+    <feGaussianBlur in="drop" stdDeviation="0.5" result="dropSoft"/>
+    <feFlood flood-color="#000000" flood-opacity="0.5"/>
+    <feComposite in2="dropSoft" operator="in" result="under"/>
+    <feMerge><feMergeNode in="under"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="rim"/><feMergeNode in="lit"/></feMerge>
+  </filter>
+  <filter id="emboss-sm" x="-10%" y="-30%" width="120%" height="160%" color-interpolation-filters="sRGB">
+    <feOffset in="SourceAlpha" dy="-0.8" result="up"/>
+    <feComposite in="SourceAlpha" in2="up" operator="out" result="lowEdge"/>
+    <feFlood flood-color="#000000" flood-opacity="0.35"/>
+    <feComposite in2="lowEdge" operator="in" result="shade"/>
+    <feOffset in="SourceAlpha" dy="0.7" result="down"/>
+    <feComposite in="SourceAlpha" in2="down" operator="out" result="topEdge"/>
+    <feFlood flood-color="#ffffff" flood-opacity="0.7"/>
+    <feComposite in2="topEdge" operator="in" result="rim"/>
+    <feOffset in="SourceAlpha" dy="0.9" result="drop"/>
+    <feFlood flood-color="#000000" flood-opacity="0.45"/>
+    <feComposite in2="drop" operator="in" result="under"/>
+    <feMerge><feMergeNode in="under"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="rim"/></feMerge>
+  </filter>
+</svg>
+
+<a class="skip" href="#act" data-i18n="skip">Skip to sign-up</a>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="/" aria-label="ZapZapSites, home"><span class="tape tape--red tape--cut brand__tape"><span class="tape__b"><span class="tape__i">ZapZap</span></span></span><span class="brand__rest">Sites</span></a>
+    <p class="top__note" data-i18n="topNote">Invite-only while we build it</p>
+    <nav class="lang" aria-label="Language">
+      <a href="?lang=en" lang="en" data-lang="en" aria-current="true"><span class="tape tape--sm"><span class="tape__b"><span class="tape__i">EN</span></span></span></a>
+      <a href="?lang=es" lang="es" data-lang="es"><span class="tape tape--sm"><span class="tape__b"><span class="tape__i">ES</span></span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= First viewport ================= -->
+<section class="hero wrap" aria-labelledby="h1">
+  <div class="hero__words">
+    <h1 id="h1" class="h1" data-i18n-lines="h1">
+      <span class="tape tape--red tape--xl"><span class="tape__b"><span class="tape__i">A website</span></span></span>
+      <span class="tape tape--red tape--xl tape--cut"><span class="tape__b"><span class="tape__i">for your business,</span></span></span>
+      <span class="tape tape--red tape--xl"><span class="tape__b"><span class="tape__i">without the</span></span></span>
+      <span class="tape tape--red tape--xl tape--cut"><span class="tape__b"><span class="tape__i">website part.</span></span></span>
+    </h1>
+    <p class="lede" data-i18n="lede">Bring the site you already have, or pick one of our templates. We label the parts worth editing, and those labels become a form you fill in. Point your domain at us and you're done.</p>
+
+    <div class="act" id="act">
+      <form class="act__one" id="waitlist" action="/waitlist" method="post">
+        <h2 class="act__h"><span class="tape tape--red"><span class="tape__b"><span class="tape__i" data-i18n="aWait">Join the waitlist</span></span></span></h2>
+        <p class="act__p" data-i18n="aWaitP">We're letting people in a few at a time. We'll email you when it's your turn.</p>
+        <label class="visually-hidden" for="w-email" data-i18n="email">Email</label>
+        <div class="act__row">
+          <input id="w-email" name="email" type="email" required autocomplete="email" placeholder="you@yourbusiness.com" data-i18n-ph="phEmail">
+          <button type="submit" class="press press--red" data-i18n="aWaitB">Add me</button>
+        </div>
+        <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      </form>
+
+      <form class="act__one" action="/join" method="get">
+        <h2 class="act__h"><span class="tape tape--black"><span class="tape__b"><span class="tape__i" data-i18n="aCode">I have a code</span></span></span></h2>
+        <p class="act__p" data-i18n="aCodeP">Someone invited you. Enter it, then sign in with Google or GitHub.</p>
+        <label class="visually-hidden" for="c-code" data-i18n="code">Invite code</label>
+        <div class="act__row">
+          <input id="c-code" name="code" required autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="ZZ-7K3M-9XPQ" pattern="[Zz]{2}-?[A-Za-z0-9]{4}-?[A-Za-z0-9]{4}" class="code-in">
+          <button type="submit" class="press press--black" data-i18n="aCodeB">Use it</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- the bench: a labelled printout that flips into its form -->
+  <div class="bench" aria-labelledby="bench-h">
+    <h2 id="bench-h" class="visually-hidden" data-i18n="benchH">A sample site, labelled</h2>
+
+    <input class="view-in" type="radio" name="view" id="v-labels" checked>
+    <input class="view-in" type="radio" name="view" id="v-form">
+    <div class="switch" role="presentation">
+      <label for="v-labels" class="switch__opt"><span class="tape tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="vLabels">Labelled page</span></span></span></label>
+      <label for="v-form" class="switch__opt"><span class="tape tape--sm tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="vForm">The form it becomes</span></span></span></label>
+    </div>
+
+    <div class="frame">
+      <!-- view 1: the printout with tape on it -->
+      <div class="print" id="print">
+        <span class="tape tape--white tape--sm sheet-tag"><span class="tape__b"><span class="tape__i" data-i18n="sample">Sample site</span></span></span>
+        <div class="ps">
+          <div class="ps__nav">
+            <span class="ps__name lab"><span data-show="name">Peña Landscaping</span><span class="tape tape--red tape--sm lab__t"><span class="tape__b"><span class="tape__i" data-i18n="tName">Business name</span></span></span></span>
+            <span class="ps__tel" data-show="phone">(253) 555-0187</span>
+          </div>
+          <div class="ps__hero">
+            <p class="ps__h lab"><span data-show="headline">Lawns, hedges and gardens, kept.</span><span class="tape tape--red tape--sm lab__t"><span class="tape__b"><span class="tape__i" data-i18n="tHeadline">Headline</span></span></span></p>
+            <p class="ps__p" data-i18n="psP">Family-run garden care in Tacoma.</p>
+            <span class="ps__btn lab"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span><span class="tape tape--black tape--sm lab__t lab__t--r"><span class="tape__b"><span class="tape__i" data-i18n="tPhone">Phone · 3 places</span></span></span></span>
+          </div>
+          <div class="ps__faq lab">
+            <span class="tape tape--blue tape--sm lab__t"><span class="tape__b"><span class="tape__i" data-i18n="tFaq">5 questions</span></span></span>
+            <p class="ps__faqh" data-i18n="psFaqH">Questions</p>
+            <ul>
+              <li data-i18n="q1">Do you give free estimates?</li>
+              <li data-i18n="q2">Which neighbourhoods do you cover?</li>
+              <li class="ps__more" data-i18n="qMore">and 3 more</li>
+            </ul>
+          </div>
+          <div class="ps__hours lab">
+            <span class="tape tape--yellow tape--sm lab__t"><span class="tape__b"><span class="tape__i" data-i18n="tHours">Hours</span></span></span>
+            <span data-i18n="psOpen">Open</span> <span data-show="hours">Mon to Sat, 7 am to 6 pm</span>
+          </div>
+          <div class="ps__foot"><span data-show="name">Peña Landscaping</span> · <span data-show="phone">(253) 555-0187</span></div>
+        </div>
+
+        <div class="found">
+          <p class="found__row" aria-label="What we found">
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="fFound">We found</span></span></span>
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="f1">1 business name</span></span></span>
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="f2">1 headline</span></span></span>
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="f3">1 phone, in 3 places</span></span></span>
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="f4">5 questions</span></span></span>
+            <span class="tape tape--white tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="f5">1 set of hours</span></span></span>
+          </p>
+          <label for="v-form" class="press press--red found__go" data-i18n="foundGo">Make these editable</label>
+        </div>
+      </div>
+
+      <!-- view 2: the same labels, lined up as a form -->
+      <div class="form-view" id="form-view">
+        <span class="tape tape--white tape--sm sheet-tag"><span class="tape__b"><span class="tape__i" data-i18n="sampleForm">The form, built from the labels</span></span></span>
+        <div class="fv">
+          <div class="fv__f"><label for="e-name"><span class="tape tape--red tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tName">Business name</span></span></span></label><input id="e-name" data-field="name" value="Peña Landscaping" maxlength="48"></div>
+          <div class="fv__f"><label for="e-headline"><span class="tape tape--red tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tHeadline">Headline</span></span></span></label><input id="e-headline" data-field="headline" value="Lawns, hedges and gardens, kept." maxlength="80"></div>
+          <div class="fv__f"><label for="e-phone"><span class="tape tape--black tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tPhone">Phone · 3 places</span></span></span></label><input id="e-phone" data-field="phone" value="(253) 555-0187" inputmode="tel" maxlength="24"><p class="fv__hint" data-i18n="hPhone">Change it once; all three places update.</p></div>
+          <div class="fv__f"><label for="e-hours"><span class="tape tape--yellow tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tHours">Hours</span></span></span></label><input id="e-hours" data-field="hours" value="Mon to Sat, 7 am to 6 pm" maxlength="40"></div>
+          <div class="fv__f fv__f--list">
+            <p class="fv__lh"><span class="tape tape--blue tape--sm"><span class="tape__b"><span class="tape__i" data-i18n="tFaq">5 questions</span></span></span></p>
+            <ol class="fv__list">
+              <li data-i18n="q1">Do you give free estimates?</li>
+              <li data-i18n="q2">Which neighbourhoods do you cover?</li>
+              <li data-i18n="q3">Do you haul away green waste?</li>
+              <li data-i18n="q4">Can I book a one-off cleanup?</li>
+              <li data-i18n="q5">Are you insured?</li>
+            </ol>
+            <p class="fv__hint" data-i18n="hList">Add, remove or reorder. The layout stays put.</p>
+          </div>
+          <p class="fv__save"><span class="press press--red press--static" data-i18n="save">Save is publish</span> <span data-i18n="saveNote">Undo is always there.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= The colours ================= -->
+<section class="band band--paper" aria-labelledby="h-colours">
+  <div class="wrap">
+    <h2 id="h-colours" class="h2" data-i18n="coloursH">On your site, every colour of tape means something</h2>
+    <p class="p2" data-i18n="coloursP">A label says what kind of thing sits under it, and what kind of thing it is decides what you can do with it. Nothing else on the page can be touched, so nothing else can break.</p>
+    <ul class="kinds">
+      <li class="kind"><span class="tape tape--red"><span class="tape__b"><span class="tape__i" data-i18n="kText">Text</span></span></span><p data-i18n="kTextP">Headlines and paragraphs. Type the words; the layout takes care of itself.</p></li>
+      <li class="kind"><span class="tape tape--black"><span class="tape__b"><span class="tape__i" data-i18n="kContact">Contact</span></span></span><p data-i18n="kContactP">Phone, email, address. Written once, used everywhere it appears.</p></li>
+      <li class="kind"><span class="tape tape--blue"><span class="tape__b"><span class="tape__i" data-i18n="kList">List</span></span></span><p data-i18n="kListP">Questions, services, a menu. Add, remove and reorder the items.</p></li>
+      <li class="kind"><span class="tape tape--yellow"><span class="tape__b"><span class="tape__i" data-i18n="kHours">Hours</span></span></span><p data-i18n="kHoursP">Opening hours, kept in one place, and readable by search engines.</p></li>
+      <li class="kind"><span class="tape tape--green"><span class="tape__b"><span class="tape__i" data-i18n="kPhoto">Photo</span></span></span><p data-i18n="kPhotoP">Resized for every screen, with the location data stripped out.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Four steps ================= -->
+<section class="band" aria-labelledby="h-steps">
+  <div class="wrap">
+    <h2 id="h-steps" class="h2" data-i18n="stepsH">Four steps, start to live</h2>
+    <p class="p2" data-i18n="stepsP">No repo, no build step, no hosting account, no CSS.</p>
+    <ol class="steps">
+      <li class="step"><span class="tape tape--white tape--lg"><span class="tape__b"><span class="tape__i"><span class="step__n">1</span> <span data-i18n="s1t">Sign in</span></span></span></span><p data-i18n="s1">With Google or GitHub. No passwords.</p></li>
+      <li class="step"><span class="tape tape--white tape--lg tape--cut"><span class="tape__b"><span class="tape__i"><span class="step__n">2</span> <span data-i18n="s2t">Bring it</span></span></span></span><p data-i18n="s2">Paste your site, upload the file or a zip, give us its address, or start from a template.</p></li>
+      <li class="step"><span class="tape tape--white tape--lg"><span class="tape__b"><span class="tape__i"><span class="step__n">3</span> <span data-i18n="s3t">Fill it in</span></span></span></span><p data-i18n="s3">Check the labels, then fill in the form. Saving publishes.</p></li>
+      <li class="step"><span class="tape tape--white tape--lg tape--cut"><span class="tape__b"><span class="tape__i"><span class="step__n">4</span> <span data-i18n="s4t">Go live</span></span></span></span><p data-i18n="s4">Point your domain at us. We show the exact steps for your registrar. A free zzsites.com address works from minute one.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= Six looks ================= -->
+<section class="band band--paper" aria-labelledby="h-looks">
+  <div class="wrap">
+    <h2 id="h-looks" class="h2" data-i18n="looksH">Same labels, six looks</h2>
+    <p class="p2" data-i18n="looksP">Pick a look and colour, type, spacing and corners change together. There is no colour picker, so no choice can make your site hard to read.</p>
+    <ul class="looks">
+      <li class="look"><div class="mini site--warm"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Warm</span></span></span></li>
+      <li class="look"><div class="mini site--slate"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Slate</span></span></span></li>
+      <li class="look"><div class="mini site--ink"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Ink</span></span></span></li>
+      <li class="look"><div class="mini site--sage"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Sage</span></span></span></li>
+      <li class="look"><div class="mini site--sand"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Sand</span></span></span></li>
+      <li class="look"><div class="mini site--bold"><p class="mini__h" data-show="name">Peña Landscaping</p><p class="mini__p" data-show="headline">Lawns, hedges and gardens, kept.</p><span class="mini__btn"><span data-i18n="psCall">Call</span> <span data-show="phone">(253) 555-0187</span></span></div><span class="tape tape--white tape--sm look__t"><span class="tape__b"><span class="tape__i">Bold</span></span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Left off ================= -->
+<section class="band" aria-labelledby="h-off">
+  <div class="wrap off">
+    <div>
+      <h2 id="h-off" class="h2" data-i18n="offH">What we left off the shelf</h2>
+      <p class="p2" data-i18n="offP">Few features is the point. If you need something more, we help you with it one-off instead of building it into the product.</p>
+    </div>
+    <ul class="peeled" aria-label="Not included">
+      <li><span class="tape tape--dull"><span class="tape__b"><span class="tape__i" data-i18n="o1">Drag and drop</span></span></span></li>
+      <li><span class="tape tape--dull tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="o2">CSS editing</span></span></span></li>
+      <li><span class="tape tape--dull"><span class="tape__b"><span class="tape__i" data-i18n="o3">Plugins</span></span></span></li>
+      <li><span class="tape tape--dull tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="o4">A shop or bookings</span></span></span></li>
+      <li><span class="tape tape--dull"><span class="tape__b"><span class="tape__i" data-i18n="o5">A blog</span></span></span></li>
+      <li><span class="tape tape--dull tape--cut"><span class="tape__b"><span class="tape__i" data-i18n="o6">Passwords</span></span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Price ================= -->
+<section class="band band--paper" aria-labelledby="h-price">
+  <div class="wrap price">
+    <div class="price__tag">
+      <h2 id="h-price" class="visually-hidden" data-i18n="priceH">Price</h2>
+      <span class="tape tape--white tape--price"><span class="tape__b"><span class="tape__i">$0</span></span></span>
+      <p class="price__lead" data-i18n="priceLead">Nothing is charged today.</p>
+    </div>
+    <dl class="price__list">
+      <div><dt data-i18n="pr1">Hosting, pages, HTTPS</dt><dd data-i18n="free">Free</dd></div>
+      <div><dt data-i18n="pr2">A free zzsites.com address</dt><dd data-i18n="free">Free</dd></div>
+      <div><dt data-i18n="pr3">Your own domain, connected</dt><dd data-i18n="free">Free</dd></div>
+      <div><dt data-i18n="pr4">Contact form</dt><dd data-i18n="free">Free</dd></div>
+      <div><dt data-i18n="pr5">AI credits each month, per site</dt><dd>100</dd></div>
+    </dl>
+    <p class="price__fine" data-i18n="priceFine">No subscription, no tiers, no seats. Past 100 credits a month, credits come in packs that never expire. Pack prices aren't set yet.</p>
+  </div>
+</section>
+
+<!-- ================= Close ================= -->
+<section class="band close" aria-labelledby="h-close">
+  <div class="wrap">
+    <h2 id="h-close" class="close__h" data-i18n-lines="closeH"><span class="tape tape--red tape--xl"><span class="tape__b"><span class="tape__i">Two labels.</span></span></span> <span class="tape tape--black tape--xl tape--cut"><span class="tape__b"><span class="tape__i">Pick one.</span></span></span></h2>
+    <p class="close__links">
+      <a class="press press--red" href="#w-email" data-i18n="aWait">Join the waitlist</a>
+      <a class="press press--black" href="#c-code" data-i18n="aCode">I have a code</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="brand brand--foot"><span class="tape tape--red tape--cut tape--sm brand__tape"><span class="tape__b"><span class="tape__i">ZapZap</span></span></span><span class="brand__rest">Sites</span></p>
+    <p data-i18n="foot">A product of AInvirion LLC.</p>
+    <p class="foot__links"><a href="/pricing.md" data-i18n="fPricing">Pricing, in plain text</a><a href="/llms.txt" data-i18n="fLlms">For AI assistants</a></p>
+  </div>
+</footer>
+
+<script src="app.js?v=20260923" defer></script>
+</body>
+</html>

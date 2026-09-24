@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T23:33:53+00:00",
+  "title": "Design System: ZapZapSites",
+  "extensions": {
+    "scope": {
+      "governs": "ZapZapSites brand and marketing surfaces",
+      "source": "mockups/landing/02-labelled/",
+      "notGoverned": [
+        "src/zzsites/web/static/console.css (builder console)",
+        "src/zzsites/themes/*.css and src/zzsites/design/ (published customer-site themes; the landing previews reproduce them as product truth)"
+      ],
+      "technicalDesign": "docs/DESIGN.md",
+      "retired": "violet #5b4bf5 and lightning-bolt identity"
+    },
+    "colorMeta": {
+      "bench": {
+        "role": "neutral",
+        "displayName": "Workbench Grey",
+        "canonical": "#d3d8de",
+        "tonalRamp": [
+          "#080b0f",
+          "#22252a",
+          "#3e4247",
+          "#5d6267",
+          "#7e8388",
+          "#a1a5ab",
+          "#c5cad0",
+          "#eaeff5"
+        ]
+      },
+      "band": {
+        "role": "neutral",
+        "displayName": "Pale Band",
+        "canonical": "#eef1f4",
+        "tonalRamp": [
+          "#090b0d",
+          "#232527",
+          "#404245",
+          "#5f6164",
+          "#808385",
+          "#a2a5a8",
+          "#c6c9cc",
+          "#eceff2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#16171a",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#242528",
+          "#414245",
+          "#606165",
+          "#818286",
+          "#a3a5a9",
+          "#c7c9cd",
+          "#edeef3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#41444b",
+        "tonalRamp": [
+          "#090b11",
+          "#22252b",
+          "#3f4249",
+          "#5e6169",
+          "#7f828a",
+          "#a1a5ad",
+          "#c5c9d2",
+          "#ebeef7"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#5c6068",
+        "tonalRamp": [
+          "#080b11",
+          "#22252c",
+          "#3e424a",
+          "#5d6169",
+          "#7e828b",
+          "#a1a5ae",
+          "#c5c9d2",
+          "#eaeff8"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Grey",
+        "canonical": "#b3bac3",
+        "tonalRamp": [
+          "#070b11",
+          "#20262c",
+          "#3d434a",
+          "#5c626a",
+          "#7c838b",
+          "#9fa6af",
+          "#c3cad3",
+          "#e8eff9"
+        ]
+      },
+      "field-stroke": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "#8a8c90",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a9",
+          "#c7c9cd",
+          "#eceef3"
+        ]
+      },
+      "field-placeholder": {
+        "role": "neutral",
+        "displayName": "Field Placeholder",
+        "canonical": "#6b6e74",
+        "tonalRamp": [
+          "#090b0f",
+          "#23252a",
+          "#3f4247",
+          "#5e6167",
+          "#7f8289",
+          "#a2a5ac",
+          "#c6c9d0",
+          "#ebeff5"
+        ]
+      },
+      "foot-ink": {
+        "role": "neutral",
+        "displayName": "Footer Ink",
+        "canonical": "#c8c9c4",
+        "tonalRamp": [
+          "#0b0c08",
+          "#252522",
+          "#42423e",
+          "#61625d",
+          "#82837e",
+          "#a5a6a1",
+          "#c9cac5",
+          "#eeefea"
+        ]
+      },
+      "tape-red": {
+        "role": "primary",
+        "displayName": "Label Red",
+        "canonical": "#c8102e",
+        "tonalRamp": [
+          "#1e0002",
+          "#4d000a",
+          "#7f0519",
+          "#b51129",
+          "#e43845",
+          "#fa7675",
+          "#ffb2ae",
+          "#fee9e7"
+        ],
+        "regionMeaning": "Region type: text."
+      },
+      "tape-black": {
+        "role": "secondary",
+        "displayName": "Contact Black",
+        "canonical": "#1a1a1c",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#252527",
+          "#424244",
+          "#616163",
+          "#828285",
+          "#a5a5a7",
+          "#c9c9cb",
+          "#eeeef1"
+        ],
+        "regionMeaning": "Region type: contact."
+      },
+      "tape-blue": {
+        "role": "secondary",
+        "displayName": "List Blue",
+        "canonical": "#1e4fa8",
+        "tonalRamp": [
+          "#000826",
+          "#021f59",
+          "#083a91",
+          "#2b5cb6",
+          "#4b7fdd",
+          "#72a4fd",
+          "#adcafd",
+          "#e6effe"
+        ],
+        "regionMeaning": "Region type: list."
+      },
+      "tape-yellow": {
+        "role": "tertiary",
+        "displayName": "Hours Yellow",
+        "canonical": "#f5c400",
+        "tonalRamp": [
+          "#100a00",
+          "#2f2400",
+          "#514005",
+          "#765e0e",
+          "#9e7e05",
+          "#c8a00d",
+          "#f0c432",
+          "#ffeebf"
+        ],
+        "regionMeaning": "Region type: hours."
+      },
+      "tape-green": {
+        "role": "tertiary",
+        "displayName": "Photo Green",
+        "canonical": "#1f7a3e",
+        "tonalRamp": [
+          "#001003",
+          "#022e11",
+          "#0a5024",
+          "#167439",
+          "#419759",
+          "#66bb7b",
+          "#8ae09e",
+          "#c7ffd2"
+        ],
+        "regionMeaning": "Region type: photo."
+      },
+      "tape-white": {
+        "role": "tertiary",
+        "displayName": "Status White",
+        "canonical": "#f3f3ef",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a1",
+          "#c9c9c5",
+          "#efefeb"
+        ],
+        "regionMeaning": "Status and non-region tags."
+      },
+      "tape-dull": {
+        "role": "tertiary",
+        "displayName": "Left-off Grey",
+        "canonical": "#686a6f",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#232529",
+          "#404246",
+          "#5f6166",
+          "#808287",
+          "#a3a5aa",
+          "#c7c9cf",
+          "#eceef4"
+        ],
+        "regionMeaning": "Things left off the product."
+      },
+      "tape-lettering": {
+        "role": "neutral",
+        "displayName": "Tape Lettering",
+        "canonical": "#f3f2ec",
+        "tonalRamp": [
+          "#0c0b08",
+          "#262521",
+          "#43423d",
+          "#62615c",
+          "#83827d",
+          "#a6a5a0",
+          "#cac9c3",
+          "#f0efe9"
+        ]
+      },
+      "tape-lettering-dark": {
+        "role": "neutral",
+        "displayName": "Tape Lettering Dark",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display on tape",
+        "purpose": "H1 and closing line, one tape strip per line."
+      },
+      "headline": {
+        "displayName": "Section head",
+        "purpose": "Band headings in ink, uppercase, max 22ch."
+      },
+      "title": {
+        "displayName": "Large tape",
+        "purpose": "Step titles and legend tapes."
+      },
+      "tape": {
+        "displayName": "Tape",
+        "purpose": "Default tape lettering and action card heads."
+      },
+      "label": {
+        "displayName": "Small tape",
+        "purpose": "Labels stuck to regions, toggles, printout counts."
+      },
+      "button": {
+        "displayName": "Press",
+        "purpose": "Press button lettering."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero paragraph, max 46ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, tabular figures, max 60ch."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Card copy, header note, footer."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Barlow",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "files": "mockups/landing/02-labelled/fonts/barlow-*.woff2",
+        "display": "swap"
+      },
+      {
+        "family": "Barlow Condensed",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "files": "mockups/landing/02-labelled/fonts/barlow-condensed-*.woff2",
+        "display": "swap"
+      }
+    ],
+    "textures": [
+      {
+        "name": "tape-vinyl",
+        "value": "img/tape.png, background-size auto 100%, repeat-x, background-blend-mode soft-light",
+        "provenance": "Procedurally generated by tape_texture.py (numpy noise, seed 417); no photographic source."
+      }
+    ],
+    "filters": [
+      {
+        "name": "emboss",
+        "purpose": "Raised lettering on default and large tapes: specular light, top rim, lower shade, drop."
+      },
+      {
+        "name": "emboss-sm",
+        "purpose": "Raised lettering on small tapes and selected toggles."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "paper-lift",
+        "value": "0 1px 1px rgba(22, 23, 26, .08), 0 18px 36px -18px rgba(22, 23, 26, .35)",
+        "purpose": "White sheets on the bench."
+      },
+      {
+        "name": "tape-drop",
+        "value": "drop-shadow(0 1px 1px rgba(20, 24, 30, .28)) drop-shadow(0 4px 5px rgba(20, 24, 30, .16))",
+        "purpose": "filter on the tape wrapper, so angled cuts keep their shadow."
+      },
+      {
+        "name": "press-bevel",
+        "value": "inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .22), 0 6px 12px -6px rgba(0, 0, 0, .45)",
+        "purpose": "Press buttons at rest."
+      },
+      {
+        "name": "press-bevel-hover",
+        "value": "inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .22), 0 10px 16px -8px rgba(0, 0, 0, .5)",
+        "purpose": "Press buttons on hover."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-ring",
+        "value": "3px solid #1e4fa8, offset 3px (1px on fields)",
+        "purpose": "All focusable elements; the switch draws it on the visible label of the hidden radio."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "All state transitions and the stick-on."
+      },
+      {
+        "name": "press",
+        "value": ".15s",
+        "purpose": "Press and toggle hover/active transforms and colour."
+      },
+      {
+        "name": "stick-on",
+        "value": ".6s, from opacity 0, translate 0 -.8rem, scale 1.08; staggered .35s to .95s; runs once",
+        "purpose": "Labels stuck onto the sample sheet, only with JS and without reduced motion."
+      },
+      {
+        "name": "bench-sheet view transition",
+        "value": ".45s cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Labels / Form switch via document.startViewTransition; skipped under reduced motion; CSS-only radio state without JS."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      }
+    ],
+    "accessibility": {
+      "target": "WCAG 2.2 AA",
+      "minTarget": "2.75rem",
+      "notes": [
+        "Light lettering on green tape is 4.37:1 against flat colour; use at 1.25rem bold or larger.",
+        "Field stroke #8a8c90 is 3.37:1 on white.",
+        "Labels / Form switch works without JS."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Label Tape, region legend",
+      "kind": "custom",
+      "refersTo": "tape-red",
+      "description": "Three-layer embossed tape; the colour is the region type (red text, black contact, blue list, yellow hours, green photo).",
+      "html": "<div style=\"display:flex;gap:.6rem;flex-wrap:wrap;padding:1.5rem;background:#d3d8de\"><span class=\"ds-tape \"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Text</span></span></span><span class=\"ds-tape ds-tape--black\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Contact</span></span></span><span class=\"ds-tape ds-tape--blue ds-tape--cut\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">List</span></span></span><span class=\"ds-tape ds-tape--yellow\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Hours</span></span></span><span class=\"ds-tape ds-tape--green ds-tape--lg\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Photo</span></span></span></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-tape--black{--t:#1a1a1c;}.ds-tape--blue{--t:#1e4fa8;}.ds-tape--green{--t:#1f7a3e;}.ds-tape--lg{font-size:1.25rem;}.ds-tape--yellow{--t:#f5c400;--t-ink:#141414;}.ds-tape--yellow .ds-tape__i{text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 0 rgba(0,0,0,.12);}"
+    },
+    {
+      "name": "Status and Left-off Tapes",
+      "kind": "chip",
+      "refersTo": "tape-white",
+      "description": "White tape for status and non-region tags; dull grey tape, struck through, for things left off.",
+      "html": "<div style=\"display:flex;gap:.6rem;flex-wrap:wrap;padding:1.5rem;background:#d3d8de\"><span class=\"ds-tape ds-tape--white ds-tape--sm\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Sample site</span></span></span><span class=\"ds-tape ds-tape--dull ds-tape--cut\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Drag and drop</span></span></span><span class=\"ds-tape ds-tape--dull\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Plugins</span></span></span></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-tape--sm{font-size:.75rem;letter-spacing:.1em;}.ds-tape--sm .ds-tape__b{padding:.42em .65em .36em;}.ds-tape--white{--t:#f3f3ef;--t-ink:#16171a;}.ds-tape--white .ds-tape__i{text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 0 rgba(0,0,0,.12);}.ds-tape--dull{--t:#686a6f;--t-ink:#f2f2ef;font-size:1.25rem;}.ds-tape--dull .ds-tape__i{text-decoration:line-through;text-decoration-thickness:2px;}"
+    },
+    {
+      "name": "Headline on Tape",
+      "kind": "custom",
+      "refersTo": "tape-red",
+      "description": "Display headline broken into one red strip per line, alternating rounded and cut ends, tilted within 1deg.",
+      "html": "<div style=\"padding:1.5rem;background:#d3d8de\"><h1 class=\"ds-h1\"><span class=\"ds-tape ds-r1 ds-tape--xl\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">A website</span></span></span><span class=\"ds-tape ds-r2 ds-tape--xl ds-tape--cut\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">for your business,</span></span></span></h1></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-h1{display:flex;flex-direction:column;align-items:flex-start;gap:.28rem;margin:0;}.ds-tape--xl{font-size:clamp(2rem,.9rem + 3.4vw,3.9rem);font-weight:800;letter-spacing:.035em;}.ds-tape--xl .ds-tape__b{padding:.16em .32em .1em;}.ds-tape--xl.ds-tape--cut .ds-tape__b{padding-left:.5em;padding-right:.5em;}.ds-r1{transform:rotate(-.6deg);}.ds-r2{transform:rotate(.5deg) translateX(.35rem);}"
+    },
+    {
+      "name": "Press, Red",
+      "kind": "button",
+      "refersTo": "press-red",
+      "description": "Primary action. A tape you push: rises on hover, inverts to white with red lettering while pressed.",
+      "html": "<button class=\"ds-press ds-press--red\">Join the waitlist</button>",
+      "css": ".ds-press{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.55rem 1.15rem;border:0;border-radius:2px;cursor:pointer;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.125rem;text-transform:uppercase;letter-spacing:.09em;color:#fbfbf8;text-shadow:0 1px 0 rgba(0,0,0,.38);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(0,0,0,.25),0 1px 1px rgba(0,0,0,.22),0 6px 12px -6px rgba(0,0,0,.45);transition:transform .15s cubic-bezier(.16,1,.3,1),box-shadow .15s cubic-bezier(.16,1,.3,1),background-color .15s cubic-bezier(.16,1,.3,1),color .15s cubic-bezier(.16,1,.3,1);}.ds-press:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(0,0,0,.25),0 1px 1px rgba(0,0,0,.22),0 10px 16px -8px rgba(0,0,0,.5);}.ds-press:focus-visible{outline:3px solid #1e4fa8;outline-offset:3px;}.ds-press:active{transform:translateY(1px);background-color:#f3f3ef;color:#16171a;text-shadow:none;}.ds-press--red{background-color:#c8102e;}.ds-press--red:active{background-color:#f3f3ef;color:#c8102e;}"
+    },
+    {
+      "name": "Press, Black",
+      "kind": "button",
+      "refersTo": "press-black",
+      "description": "The equal second action. Inverts to white with ink lettering while pressed.",
+      "html": "<button class=\"ds-press ds-press--black\">I have a code</button>",
+      "css": ".ds-press{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.55rem 1.15rem;border:0;border-radius:2px;cursor:pointer;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.125rem;text-transform:uppercase;letter-spacing:.09em;color:#fbfbf8;text-shadow:0 1px 0 rgba(0,0,0,.38);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(0,0,0,.25),0 1px 1px rgba(0,0,0,.22),0 6px 12px -6px rgba(0,0,0,.45);transition:transform .15s cubic-bezier(.16,1,.3,1),box-shadow .15s cubic-bezier(.16,1,.3,1),background-color .15s cubic-bezier(.16,1,.3,1),color .15s cubic-bezier(.16,1,.3,1);}.ds-press:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(0,0,0,.25),0 1px 1px rgba(0,0,0,.22),0 10px 16px -8px rgba(0,0,0,.5);}.ds-press:focus-visible{outline:3px solid #1e4fa8;outline-offset:3px;}.ds-press:active{transform:translateY(1px);background-color:#f3f3ef;color:#16171a;text-shadow:none;}.ds-press--black{background-color:#1a1a1c;}"
+    },
+    {
+      "name": "Toggle Tapes (Labels / Form, EN / ES)",
+      "kind": "nav",
+      "refersTo": "toggle",
+      "description": "Small tapes as a two-way switch: white unselected, black and embossed when selected; 44px targets.",
+      "html": "<div class=\"ds-switch\" role=\"radiogroup\" aria-label=\"View\"><button class=\"ds-opt\" role=\"radio\" aria-checked=\"true\"><span class=\"ds-tape ds-tape--sm\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Labelled page</span></span></span></button><button class=\"ds-opt\" role=\"radio\" aria-checked=\"false\"><span class=\"ds-tape ds-tape--sm ds-tape--cut\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">The form it becomes</span></span></span></button></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-switch{display:flex;gap:.55rem;padding:1rem;background:#d3d8de;}.ds-opt{all:unset;cursor:pointer;min-height:2.75rem;display:inline-flex;align-items:center;border-radius:3px;}.ds-opt:focus-visible{outline:3px solid #1e4fa8;outline-offset:3px;}.ds-tape--sm{font-size:.9375rem;transition:transform .15s cubic-bezier(.16,1,.3,1);}.ds-opt .ds-tape{--t:#f3f3ef;--t-ink:#16171a;}.ds-opt .ds-tape__i{text-shadow:none;}.ds-opt[aria-checked=true] .ds-tape,.ds-opt:active .ds-tape{--t:#1a1a1c;--t-ink:#f3f2ec;}.ds-opt[aria-checked=true] .ds-tape__i{text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-opt:hover .ds-tape{transform:translateY(-1px);}"
+    },
+    {
+      "name": "Field with Tape Label",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Form-view field: the label is the same tape that marked the region; blue focus ring, red on invalid.",
+      "html": "<div class=\"ds-f\"><label for=\"ds-e\"><span class=\"ds-tape ds-tape--sm\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Business name</span></span></span></label><input id=\"ds-e\" class=\"ds-in\" value=\"Peña Landscaping\"></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-f{display:grid;gap:.4rem;padding:1.25rem;background:#fff;max-width:22rem;}.ds-tape--sm{font-size:.75rem;letter-spacing:.1em;}.ds-in{min-height:3rem;padding:.5rem .7rem;border:1.5px solid #8a8c90;border-radius:2px;background:#fff;color:#16171a;font:400 1.0625rem 'Barlow','Helvetica Neue',Arial,sans-serif;}.ds-in:hover{border-color:#16171a;}.ds-in:focus{outline:3px solid #1e4fa8;outline-offset:1px;border-color:#16171a;}.ds-in:user-invalid{border-color:#c8102e;}"
+    },
+    {
+      "name": "Labelled Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "White paper with the paper lift, tagged by a white status tape, with a small tape stuck to a region.",
+      "html": "<div style=\"padding:2rem;background:#d3d8de\"><div class=\"ds-sheet\"><span class=\"ds-tape ds-tag ds-tape--white ds-tape--sm\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Sample site</span></span></span><p class=\"ds-region\">Lawns, hedges and gardens, kept.<span class=\"ds-tape ds-lab ds-tape--sm\"><span class=\"ds-tape__b\"><span class=\"ds-tape__i\">Headline</span></span></span></p></div></div>",
+      "css": "@font-face{font-family:'Barlow Condensed';font-weight:700;src:url('/mockups/landing/02-labelled/fonts/barlow-condensed-700.woff2?v=20260923') format('woff2');}.ds-tape{--t:#c8102e;--t-ink:#f3f2ec;--t-ink:color-mix(in srgb,var(--t) 10%,#f8f7f3);display:inline-block;font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;line-height:1;white-space:nowrap;filter:drop-shadow(0 1px 1px rgba(20,24,30,.28)) drop-shadow(0 4px 5px rgba(20,24,30,.16));}.ds-tape__b{display:block;padding:.42em .75em .36em;background-color:var(--t);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 3px);background-blend-mode:soft-light;border-radius:.32em;}.ds-tape__i{display:inline-block;color:var(--t-ink);text-shadow:0 -1px 0 rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.35);}.ds-tape--cut .ds-tape__b{border-radius:0;clip-path:polygon(.45em 0,100% 0,calc(100% - .45em) 100%,0 100%);padding-left:1em;padding-right:1em;}.ds-sheet{position:relative;background:#fff;border-radius:2px;padding:2.2rem 1.25rem 1.4rem;box-shadow:0 1px 1px rgba(22,23,26,.08),0 18px 36px -18px rgba(22,23,26,.35);font-family:'Barlow',Arial,sans-serif;color:#16171a;}.ds-tape--sm{font-size:.75rem;letter-spacing:.1em;}.ds-tape--white{--t:#f3f3ef;--t-ink:#16171a;}.ds-tag{position:absolute;top:-.7rem;left:1rem;transform:rotate(-1.5deg);}.ds-region{position:relative;margin:0;font:700 1.6rem/1.05 Georgia,serif;}.ds-lab{position:absolute;left:-.9rem;top:-1.45rem;transform:rotate(-2deg);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Labelled Shelf",
+    "overview": "A customer's existing website, printed on white paper, lies on a cool grey workbench, and strips of embossed label tape are stuck to the parts that will become editable. The tape is the brand: its colour says what kind of thing sits under it, its raised condensed capitals carry the headlines, and pressing a tape is how you act. Everything else is quiet: grey bench, white paper, dark ink, and Barlow for reading.\n\nThe density is a working bench, not a showroom. Sheets of paper carry soft, low lift; tapes sit on top with a tight shadow of their own and a slight, hand-applied tilt. Colour appears only as tape, and every tape colour is a word in a legend the page itself teaches. Motion is physical and brief: labels are stuck on once, and the switch between the labelled page and its form is a single view transition.\n\nThe world refuses the category default of a SaaS hero with an editor screenshot and three feature cards, and it refuses corporate, techy, and playful registers. It stays plain and exact, like a shop that labels its shelves.",
+    "keyCharacteristics": [
+      "Cool grey bench (bench) with alternating lighter bands (band) and white paper sheets.",
+      "Embossed label tape as the only source of chroma, one colour per region type.",
+      "Three-layer tape: shadow wrapper, textured vinyl body, raised lettering.",
+      "Headlines set on tape in Barlow Condensed caps; reading text in Barlow.",
+      "Press buttons are tape you push; pressing inverts the tape.",
+      "Labels stuck to the regions they name, tilted a degree or two.",
+      "One-shot \"stick on\" motion and a view transition on the Labels / Form switch, both off under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Page Keeps Its Own Legend Rule",
+        "body": "A tape colour on a brand surface always means its region type: red text, black contact, blue list, yellow hours, green photo, white status or a non-region tag, dull grey left off. Any surface that uses more than one tape colour teaches the legend on the page itself. Never pick a tape colour for looks.",
+        "section": "colors"
+      },
+      {
+        "name": "The Only Chroma Is Tape Rule",
+        "body": "Saturated colour appears as tape, as a press, or as the two affordance borrowings (blue links and focus ring, red selection). Grounds, sheets, rules and body text stay neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Presses Rule",
+        "body": "Actions use red or black only, the two colours the closing line names (\"Two labels. Pick one.\"). Equal-weight actions are one red and one black.",
+        "section": "colors"
+      },
+      {
+        "name": "The Condensed Is Lettering Rule",
+        "body": "Barlow Condensed is only ever set in uppercase with tracking, on tape, on a press, or as a section head. Running text is always Barlow.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Strip Per Line Rule",
+        "body": "A headline on tape is broken into one strip per line, set by hand so the longest line fits the column in every language (the H1 is four strips in English and Spanish).",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Heights Rule",
+        "body": "Paper lifts, tape sits. Nothing else floats: no cards over cards, no ambient glows, no hover lifts beyond the 1px press rise.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build every tape from the three layers (shadow wrapper, textured body, embossed lettering), so cut ends keep their shadow.",
+      "Do choose tape colour by region type only: red text, black contact, blue list, yellow hours, green photo, white status or non-region tags, dull grey for things left off.",
+      "Do teach the legend on the page whenever a surface uses more than one tape colour.",
+      "Do make pressing invert the tape: the body goes tape-white and the lettering takes the press colour.",
+      "Do stick labels to the regions they name, tilted within 2deg, and label every sample as a sample.",
+      "Do keep reading text in Barlow at 1.0625rem, 1.5 line height, within 46 to 60ch.",
+      "Do run the stick-on animation once, and the Labels / Form view transition only when `prefers-reduced-motion` is not set.",
+      "Do keep text contrast at WCAG 2.2 AA (4.5:1, or 3:1 for 1.25rem bold and up), 3:1 for field borders and focus rings, and 2.75rem minimum targets.",
+      "Do self-host the fonts and add a `?v=` version string to every CSS, JS, font and image reference."
+    ],
+    "donts": [
+      "Don't carry the retired violet (#5b4bf5) or the lightning bolt into any brand surface.",
+      "Don't apply this system to the builder console or to the published customer-site themes, and don't restyle the theme previews to match the tape.",
+      "Don't use a tape colour decoratively or out of its meaning, including coloured step numbers; numbers on a tape take the tape's own lettering.",
+      "Don't set Barlow Condensed in lowercase or for running text.",
+      "Don't add colour outside tape, presses, links, focus and selection: no coloured grounds, gradients or tinted cards.",
+      "Don't add a third depth level: no stacked cards, glows, or large hover lifts.",
+      "Don't put light lettering on green tape below 1.25rem bold.",
+      "Don't rotate section heads or reading text; only tape tilts."
+    ]
+  }
+}
