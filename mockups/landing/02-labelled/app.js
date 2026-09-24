@@ -56,7 +56,7 @@
     aiH: "Tu IA te hizo un sitio web. Aquí es donde vive.",
     aiP: "ChatGPT, o cualquier otro chat de IA, te escribe una página completa en un minuto. Después te entrega un bloque de código y te deja preguntándote dónde ponerlo. Ponlo aquí.",
     aiQ1: "¿Dónde lo subo?", aiA1: "Aquí. Pega el código, o sube el archivo o un zip.",
-    aiQ2: "¿Cómo lo cambio después?", aiA2: "En un formulario. Etiquetamos las partes que vale la pena editar; no vuelves a tocar el código.",
+    aiQ2: "¿Cómo lo cambio después?", aiA2: "En un formulario. Etiquetamos las partes que vale la pena editar; no vuelves a tocar el código. O conecta tu asistente de IA y pídele los cambios con tus palabras; nada se publica hasta que tú lo apruebas.",
     aiQ3: "¿Cómo queda en línea?", aiA3: "Al guardar se publica en una dirección gratis en zzsites.com. Tu propio dominio está a unos pocos pasos exactos.",
     aiGo: "Dale un hogar",
     codeTag: "Lo que te dio tu IA",
